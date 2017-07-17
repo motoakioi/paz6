@@ -33,7 +33,7 @@ module top(mclk, rst_n, seg, btn, sw);
 	wire [25:0] reg_data0, reg_data1, reg_cnt;
 	wire [43:0] reg_ord;
 	wire reg_comp;
-	wire chbeg;
+	wire [1:0]chbeg;
 
 	//memory
 	wire [25:0] mem_data;
