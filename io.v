@@ -69,7 +69,7 @@ module io(comp, cnt, ord, btn, sw, chbeg, seg, clk, rst_n);
 			end
 			if(btn[4] && !btn_flag[4]) begin
 				btn_flag[4] <= 1;
-				if(num < cnt) num <= num + 1;
+				if(num < cnt -1) num <= num + 1;
 			end else if(btn[3] && !btn_flag[3]) begin
 				btn_flag[3] <= 1;
 				if(num > 0) num <= num - 1;
